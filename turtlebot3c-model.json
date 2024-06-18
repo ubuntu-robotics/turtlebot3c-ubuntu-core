@@ -1,0 +1,75 @@
+{
+    "type": "model",
+    "series": "16",
+    "model": "turtlebot3c-pi-arm64",
+    "architecture": "arm64",
+    "authority-id": "canonical-robotics",
+    "brand-id": "canonical-robotics",
+    "timestamp": "2024-06-06T14:10:24+00:00",
+    "base": "core20",
+    "grade": "dangerous",
+    "snaps": [
+        {
+            "name": "turtlebot3c-pi",
+            "type": "gadget"
+        },
+        { "name": "pi-kernel",
+            "type": "kernel",
+            "default-channel": "20/stable",
+            "id": "jeIuP6tfFrvAdic8DMWqHmoaoukAPNbJ"
+        },
+        {
+            "name": "core20",
+            "type": "base",
+            "default-channel": "latest/stable",
+            "id": "DLqre5XGLbDqg9jPtiAhRRjDuPVa5X1q"
+        },
+        {
+            "name": "snapd",
+            "type": "snapd",
+            "default-channel": "latest/stable",
+            "id": "PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4"
+        },
+        {
+            "name": "ros-noetic-robot",
+            "type": "app",
+            "default-channel": "latest/stable",
+            "id": "hRIlEoo1gAoRqfWCrTmdNeioKT1DwQrn"
+        },
+        {
+            "name": "turtlebot3c-bringup",
+            "type": "app",
+            "default-channel": "latest/beta",
+            "id": "9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa"
+        },
+        {
+            "name": "turtlebot3c-nav",
+            "type": "app",
+            "default-channel": "latest/beta",
+            "id": "LJzR5xevdtU54wLeciVWXdhlKy1L4TrX"
+        },
+        {
+            "name": "turtlebot3c-teleop",
+            "type": "app",
+            "default-channel": "latest/beta",
+            "id": "m37jVvixxcn5YVD1t4wxfBKgx6nX4esy"
+        },
+        {
+            "name": "network-manager",
+            "type": "app",
+            "default-channel": "20/stable",
+            "id": "RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy"
+        },
+        {
+            "name": "wifi-hotspot-config",
+            "type": "app",
+            "default-channel": "latest/beta",
+            "id": "9s6xjXubw4a2yA0TE1aIyK90kewEzhYf"
+        },
+	{
+	    "name": "avahi",
+	    "type": "app",
+	    "id": "dVK2PZeOLKA7vf1WPCap9F8luxTk9Oll"
+        }
+    ]
+}
