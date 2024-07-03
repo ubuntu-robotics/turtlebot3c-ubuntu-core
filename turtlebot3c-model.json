@@ -1,23 +1,23 @@
 {
     "type": "model",
     "series": "16",
-    "model": "turtlebot3c-pi-arm64",
-    "architecture": "arm64",
-    "authority-id": "canonical-robotics",
-    "brand-id": "canonical-robotics",
+    "model": "turtlebot3c-vm-arm64",
+    "architecture": "amd64",
+    "authority-id": "ptmJnj3YiYifu3CmfwfFHLq59fF54qr6",
+    "brand-id": "ptmJnj3YiYifu3CmfwfFHLq59fF54qr6",
     "timestamp": "2024-06-06T14:10:24+00:00",
     "base": "core20",
     "grade": "dangerous",
     "snaps": [
         {
-            "name": "turtlebot3c-pi",
+            "name": "turtlebot3c-gadget",
             "type": "gadget"
         },
         {
-	    "name": "pi-kernel",
+            "name": "pc-kernel",
             "type": "kernel",
             "default-channel": "20/stable",
-            "id": "jeIuP6tfFrvAdic8DMWqHmoaoukAPNbJ"
+            "id": "pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza"
         },
         {
             "name": "core20",
@@ -54,24 +54,6 @@
             "type": "app",
             "default-channel": "latest/beta",
             "id": "m37jVvixxcn5YVD1t4wxfBKgx6nX4esy"
-        },
-        {
-            "name": "network-manager",
-            "type": "app",
-            "default-channel": "20/stable",
-            "id": "RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy"
-        },
-        {
-            "name": "wifi-hotspot-config",
-            "type": "app",
-            "default-channel": "latest/beta",
-            "id": "9s6xjXubw4a2yA0TE1aIyK90kewEzhYf"
-        },
-	{
-	    "name": "avahi",
-	    "type": "app",
-	    "default-channel": "20/stable",
-	    "id": "dVK2PZeOLKA7vf1WPCap9F8luxTk9Oll"
         }
     ]
 }
