@@ -1,0 +1,8 @@
+architecture: amd64
+creation_date: 1692258648
+properties:
+  architecture: amd64
+  description: TurtleBot3c simulation core image
+  name: turtlebot3c-core-20
+  os: ubuntu
+  release: focal
