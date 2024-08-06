@@ -69,6 +69,7 @@
 	{
 	    "name": "avahi",
 	    "type": "app",
+	    "default-channel": "20/stable",
 	    "id": "dVK2PZeOLKA7vf1WPCap9F8luxTk9Oll"
         }
     ]
