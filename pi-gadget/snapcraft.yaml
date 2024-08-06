@@ -2,9 +2,7 @@ name: turtlebot3c-pi
 version: 20-1
 summary: Raspberry Pi gadget
 description: |
-  Support files for booting Raspberry Pi.
-  This gadget snap supports the Raspberry Pi 2B, 3B, 3A+, 3B+, 4B, Compute
-  Module 3, and the Compute Module 3+ universally.
+  Support files for booting the TurtleBot3c waffle Raspberry Pi.
 type: gadget
 base: core20
 assumes: [kernel-assets]
