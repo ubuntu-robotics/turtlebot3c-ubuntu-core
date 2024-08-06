@@ -1,18 +1,19 @@
 # turtlebot3c-ubuntu-core
 Turtlebot3c Ubuntu Core image
 
-The image will contain the TurtleBot3c snaps:
+The image contains the TurtleBot3c snaps:
 - [turtlebot3c-bringup](https://snapcraft.io/turtlebot3c-bringup)
 - [turtlebot3c-nav](https://snapcraft.io/turtlebot3c-nav)
 - [turtlebot3c-teleop](https://snapcraft.io/turtlebot3c-teleop)
 
-The image will create a Hotspot called `turtlebot3c`
+The image creates a Hotspot called `turtlebot3c`
 with the password `turtlebot3c`.
 
 Once connected to the hotspot,
-the robot will be available at `turtelbot3c.local`
+the robot is available on the network as `turtelbot3c.local`.
+Mind that you need avahi installed on your remote machine, see e.g. `snap install avahi`.
 
-All the ROS topics are available on the `ROS_MASTER_URI`:
+Remember to set up the `ROS_MASTER_URI` to point to the robot:
 
 ```
 ROS_MASTER_URI=http://turtelbot3c.local:11311/
@@ -22,7 +23,7 @@ ROS_MASTER_URI=http://turtelbot3c.local:11311/
 
 ### Build the gadget snap
 
-Build the gadget snap with snapcraft
+Build the gadget snap with snapcraft:
 
 ```
 cd pi-gadget
