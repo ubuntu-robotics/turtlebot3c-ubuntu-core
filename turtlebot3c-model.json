@@ -13,7 +13,8 @@
             "name": "turtlebot3c-pi",
             "type": "gadget"
         },
-        { "name": "pi-kernel",
+        {
+	    "name": "pi-kernel",
             "type": "kernel",
             "default-channel": "20/stable",
             "id": "jeIuP6tfFrvAdic8DMWqHmoaoukAPNbJ"
