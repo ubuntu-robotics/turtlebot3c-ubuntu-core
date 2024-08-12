@@ -1,5 +1,5 @@
 volumes:
-  pi:
+  turtlebot3c:
     schema: mbr
     bootloader: u-boot
     structure:
