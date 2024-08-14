@@ -65,16 +65,17 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: .
-      - name: List files to upload
+      - name: Compress the Ubuntu image
         run: |
-          ls -lah turtlebot3c.model
-          ls -lah ./pi-gadget/turtlebot3c-pi_*_arm64.snap
-          ls -lah turtlebot3c.img
+          # The image must be compressed.
+          # GH release max file size is 2GB
+          # and the uncompressed image is 3.5GB.
+          tar czf turtlebot3c.img.tar.gz turtlebot3c.img
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             turtlebot3c.model
             ./pi-gadget/turtlebot3c-pi_*_arm64.snap 
-            turtlebot3c.img
+            turtlebot3c.img.tar.gz
 
