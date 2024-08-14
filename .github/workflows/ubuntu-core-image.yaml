@@ -44,4 +44,29 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: turtlebot3c.img
+  release-image:
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download gadget snap
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-pi-gadget-snap
+          path: pi-gadget
+      - name: Download TurtleBot3c image
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-ubuntu-image
+          path: .
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            turtlebot3c.model
+            ./pi-gadget/turtlebot3c-pi_*_arm64.snap 
+            turtlebot3c.img
 
