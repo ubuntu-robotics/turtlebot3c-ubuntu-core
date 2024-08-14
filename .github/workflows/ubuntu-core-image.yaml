@@ -71,5 +71,5 @@ jobs:
           files: |
             turtlebot3c.model
             ./pi-gadget/turtlebot3c-pi_*_arm64.snap 
-            turtlebot3c.img
+            #turtlebot3c.img
 
