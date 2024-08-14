@@ -37,7 +37,7 @@ jobs:
           path: pi-gadget
       - name: Build the Ubuntu Core image
         run: |
-          sudo snap install ubuntu-image
+          sudo snap install ubuntu-image --classic
           ubuntu-image snap turtlebot3c.model --snap ./pi-gadget/turtlebot3c-pi_*_arm64.snap
       - name: Upload snap artifact
         uses: actions/upload-artifact@v4
