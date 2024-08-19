@@ -56,7 +56,6 @@ defaults:
     password: "turtlebot3c"
 
   9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
-    opencr-port: "/dev/ttyACM0"
     opencr-auto-update: "true"
 
 connections:
