@@ -1,4 +1,7 @@
 # turtlebot3c-ubuntu-core
+
+[![Release](https://img.shields.io/github/release/ubuntu-robotics/turtlebot3c-ubuntu-core.svg)](https://github.com/ubuntu-robotics/turtlebot3c-ubuntu-core/releases/latest)
+
 Turtlebot3c Ubuntu Core image
 
 The image contains the TurtleBot3c snaps:
@@ -18,6 +21,14 @@ Remember to set up the `ROS_MASTER_URI` to point to the robot:
 ```
 ROS_MASTER_URI=http://turtelbot3c.local:11311/
 ```
+
+## Download the image
+
+The image can be downloaded from the
+[latest release](https://github.com/ubuntu-robotics/turtlebot3c-ubuntu-core/releases/latest).
+
+After downloading the file `turtlebot3c.img.tar.gz`
+and decompressing it, the image can be written to an SD card.
 
 ## Build the image
 
