@@ -55,6 +55,9 @@ defaults:
     ssid: "turtlebot3c"
     password: "turtlebot3c"
 
+  9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
+    opencr-auto-update: "true"
+
 connections:
   # turtlebot3c-bringup
   - plug: 9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:raw-usb
