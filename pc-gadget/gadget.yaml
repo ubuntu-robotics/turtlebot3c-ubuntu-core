@@ -73,10 +73,3 @@ defaults:
   # turtlebot3c-nav configs
   LJzR5xevdtU54wLeciVWXdhlKy1L4TrX:
     turtlebot3-model: "waffle"
-
-# connections:
-#   # turtlebot3c-bringup
-#   - plug: 9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:raw-usb
-
-#   # turtlebot3c-teleop
-#   - plug: m37jVvixxcn5YVD1t4wxfBKgx6nX4esy:joystick

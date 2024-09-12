@@ -3,8 +3,8 @@
     "series": "16",
     "model": "turtlebot3c-vm-arm64",
     "architecture": "amd64",
-    "authority-id": "ptmJnj3YiYifu3CmfwfFHLq59fF54qr6",
-    "brand-id": "ptmJnj3YiYifu3CmfwfFHLq59fF54qr6",
+    "authority-id": "canonical-robotics",
+    "brand-id": "canonical-robotics",
     "timestamp": "2024-06-06T14:10:24+00:00",
     "base": "core20",
     "grade": "dangerous",
@@ -54,6 +54,12 @@
             "type": "app",
             "default-channel": "latest/beta",
             "id": "m37jVvixxcn5YVD1t4wxfBKgx6nX4esy"
+        },
+        {
+            "name": "ros-snapd",
+            "type": "app",
+            "default-channel": "noetic/stable",
+            "id": "hI0GxzwPbIYkzB0weyNgtdw9aTDvdlTL"
         }
     ]
 }

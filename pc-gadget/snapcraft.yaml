@@ -110,7 +110,3 @@ parts:
       - grub.conf
       - pc-boot.img
       - pc-core.img
-  cloud-init-config:
-    plugin: dump
-    source: .
-    stage: [cloud.conf]
