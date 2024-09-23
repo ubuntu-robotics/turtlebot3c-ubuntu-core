@@ -4,21 +4,21 @@ series: 16
 brand-id: canonical-robotics
 model: turtlebot3c-vm-arm64
 architecture: amd64
-base: core20
+base: core22
 grade: dangerous
 snaps:
   -
     name: turtlebot3c-gadget
     type: gadget
   -
-    default-channel: 20/stable
+    default-channel: 22/stable
     id: pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza
     name: pc-kernel
     type: kernel
   -
     default-channel: latest/stable
-    id: DLqre5XGLbDqg9jPtiAhRRjDuPVa5X1q
-    name: core20
+    id: amcUKQILKXHHTlmSa7NMdnXSx02dNeeT
+    name: core22
     type: base
   -
     default-channel: latest/stable
@@ -27,39 +27,39 @@ snaps:
     type: snapd
   -
     default-channel: latest/stable
-    id: hRIlEoo1gAoRqfWCrTmdNeioKT1DwQrn
-    name: ros-noetic-robot
+    id: DiBiV0KzgkEWdDLZvJO0YIUKSiyfOsZ4
+    name: ros-humble-desktop
     type: app
   -
-    default-channel: latest/beta
+    default-channel: humble/edge
     id: 9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa
     name: turtlebot3c-bringup
     type: app
   -
-    default-channel: latest/beta
-    id: LJzR5xevdtU54wLeciVWXdhlKy1L4TrX
-    name: turtlebot3c-nav
+    default-channel: humble/edge
+    id: 7KmGS1V786zcoQjSqrYsW1fwEuuESP35
+    name: ros2-nav2
     type: app
   -
-    default-channel: latest/beta
-    id: m37jVvixxcn5YVD1t4wxfBKgx6nX4esy
-    name: turtlebot3c-teleop
+    default-channel: humble/edge
+    id: 0OyYaVBlD3ww7zO2gpaEy6AqGuVGYcN0
+    name: ros2-teleop
     type: app
   -
-    default-channel: noetic/stable
-    id: hI0GxzwPbIYkzB0weyNgtdw9aTDvdlTL
-    name: ros-snapd
+    default-channel: humble/stable
+    id: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK
+    name: ros2-snapd
     type: app
-timestamp: 2024-06-06T14:10:24+00:00
+timestamp: 2024-09-13T14:10:24+00:00
 sign-key-sha3-384: R9TnkbYQopO5aiqAoPi4GgQ147kUwOMOigVWJxicjSo2ABH7oGSJ10oAyGNAPEvo
 
-AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJm4tuGAAoJEJkvyW1pqFsSE3IP/2AK
-8vpKulFXvIjGVRPTjkZBNVOhTewc6216522hUh21xi5JHW8e1BC8UHqkScSjetRWBepk08gn8vkT
-JTjgJ4U/HARIFyYRlQEllLFHKhwjHlcTwTF4MnStPjxniHBbaldMaqCgwow8wDHzpWaMK2jtK+R0
-RN4tL0K88Isl5yFJMb9Bj57my/dn+HNEYQHCXyxhCHF2fmnnUy30OFmMYo7thJLhPt0BADNuR0dk
-ScfQFaFLlz9tETCgtm7DLmhXT+ljZ2YQv8p25huqIzUbF3vmIb5RvWETwpfqKUmm0cvvSaTm0aNt
-xkDfzBx+DiMn1TvdoavOMa1lzOolausIYaLLVOewrAlDxWYiHg/jzxwIHWSIvZn/KFymYeSR1YWx
-kPxpEVJLvSUIWCbCDbtM2kgtH1zcGhsBYFr6yTibhVkySyKdenAKr03WRnnaJdRIttRW5v3XNHyR
-f7FEo36KT5EUMDLNNxVYdNccjr5t8yZCA8g18FIN4c0/iF4CVzIVjqXRo989dOsyAWme3GujGUfi
-26hmf+NpQXwGeOraMAdxZDi1MkX9Y6se4bKKwzvZs1+m91LOlXHPjYRxadNChF4VcN0GaXyQ+AQg
-d7JVNoy7dd+2Ojcx60MAsbbLhlpkHkK1C9BN7mrNU4/dGz1R14bjdQMgrEBHDZGSb+G+VOGz
+AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJm6C+OAAoJEJkvyW1pqFsSAVMP/iab
+ESTSz7WqOHIUDCwH/ODpo/D9jaW5BZFBysRv0NwwdRAPMwx/JSogoHehKZPtT5gClhxxdNoaFiv3
+qL8KR0TkGd7coGTPCQ8+1GsSgB1iUdQ3OjHfp1ILdOoInSsv9rgiPXVNxQtMbltJsofTx1SFmDKe
+v0DUSBTHYc960kC1OEkQMyPbK6qbKIvzQsDMS4fr9XPwcKM+rjm7U3etzPVfYmntBb5TDgDIILlK
+ZjaqquJwyrPDTL7cc1emW6HI9ckKxMCiGSAuRDPkZEUnLFGeDj2Dm0bjfWguJSEAf23/m2QB6LmR
+0g28Uuyc35dTYOCUNd5oJVEOaru9c9AY09B9VV5YdMMOhR9GvzXcr/DYuKMjcTicTdZYAJ9MQxZD
+47BVGhVsoiGpKtyqCZk8e1RM8/hKgTdqkBnahi1GZJulWEVJpWSSD1X/C/0pXTVfDfVKLpLACzGt
+b0vP8Wfu8g3GTueCnnXOtQmq36UaMJLVFEunKkp3LiUTZ8Q5+uKBv8WLiZYy0GjPOhUFoPl6S6XR
+1/1J8S6WvMrEvUDY0QyONXZLQkbapCov/2KXRQYua4HREPC6UWWSgQcoE+JTEH4O84efmGadAFhN
+oi5ugqT2CZty3RmuDT2fjpwxMwUovuazhDQBKbdznYuXlxlbZ2qiyrrvhFDExFao/wxxdtGx

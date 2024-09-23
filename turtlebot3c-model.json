@@ -5,8 +5,8 @@
     "architecture": "amd64",
     "authority-id": "canonical-robotics",
     "brand-id": "canonical-robotics",
-    "timestamp": "2024-06-06T14:10:24+00:00",
-    "base": "core20",
+    "timestamp": "2024-09-13T14:10:24+00:00",
+    "base": "core22",
     "grade": "dangerous",
     "snaps": [
         {
@@ -16,14 +16,14 @@
         {
             "name": "pc-kernel",
             "type": "kernel",
-            "default-channel": "20/stable",
+            "default-channel": "22/stable",
             "id": "pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza"
         },
         {
-            "name": "core20",
+            "name": "core22",
             "type": "base",
             "default-channel": "latest/stable",
-            "id": "DLqre5XGLbDqg9jPtiAhRRjDuPVa5X1q"
+            "id": "amcUKQILKXHHTlmSa7NMdnXSx02dNeeT"
         },
         {
             "name": "snapd",
@@ -32,34 +32,34 @@
             "id": "PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4"
         },
         {
-            "name": "ros-noetic-robot",
+            "name": "ros-humble-desktop",
             "type": "app",
             "default-channel": "latest/stable",
-            "id": "hRIlEoo1gAoRqfWCrTmdNeioKT1DwQrn"
+            "id": "DiBiV0KzgkEWdDLZvJO0YIUKSiyfOsZ4"
         },
         {
             "name": "turtlebot3c-bringup",
             "type": "app",
-            "default-channel": "latest/beta",
+            "default-channel": "humble/edge",
             "id": "9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa"
         },
         {
-            "name": "turtlebot3c-nav",
+            "name": "ros2-nav2",
             "type": "app",
-            "default-channel": "latest/beta",
-            "id": "LJzR5xevdtU54wLeciVWXdhlKy1L4TrX"
+            "default-channel": "humble/edge",
+            "id": "7KmGS1V786zcoQjSqrYsW1fwEuuESP35"
         },
         {
-            "name": "turtlebot3c-teleop",
+            "name": "ros2-teleop",
             "type": "app",
-            "default-channel": "latest/beta",
-            "id": "m37jVvixxcn5YVD1t4wxfBKgx6nX4esy"
+            "default-channel": "humble/edge",
+            "id": "0OyYaVBlD3ww7zO2gpaEy6AqGuVGYcN0"
         },
         {
-            "name": "ros-snapd",
+            "name": "ros2-snapd",
             "type": "app",
-            "default-channel": "noetic/stable",
-            "id": "hI0GxzwPbIYkzB0weyNgtdw9aTDvdlTL"
+            "default-channel": "humble/stable",
+            "id": "QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK"
         }
     ]
 }
