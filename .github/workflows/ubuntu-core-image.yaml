@@ -2,16 +2,16 @@ name: TurtleBot3c Ubuntu Core image
 on:
   push:
     branches:
-      - main
+      - noetic
     tags:
       - '*'
   pull_request:
     branches:
-      - main
+      - noetic
   workflow_dispatch:
 
 jobs:
-  turtlebot3c-pi-gadget-snap:
+  turtlebot3c-gadget-snap:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -20,27 +20,27 @@ jobs:
         id: build-snap
         uses: snapcore/action-build@v1
         with:
-          path: pi-gadget
+          path: turtlebot3c-gadget
       - name: Upload snap artifact
         uses: actions/upload-artifact@v4
         with:
-          name: turtlebot3c-pi-gadget-snap
+          name: turtlebot3c-gadget-snap
           path: ${{ steps.build-snap.outputs.snap }}
   ubuntu-image:
     runs-on: ubuntu-latest
-    needs: turtlebot3c-pi-gadget-snap
+    needs: turtlebot3c-gadget-snap
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Download gadget snap
         uses: actions/download-artifact@v4
         with:
-          name: turtlebot3c-pi-gadget-snap
-          path: pi-gadget
+          name: turtlebot3c-gadget-snap
+          path: gadget
       - name: Build the Ubuntu Core image
         run: |
           sudo snap install ubuntu-image --classic
-          ubuntu-image snap turtlebot3c.model --snap ./pi-gadget/turtlebot3c-pi_*_arm64.snap
+          ubuntu-image snap turtlebot3c.model --snap ./gadget/turtlebot3c*.snap
       - name: Upload snap artifact
         uses: actions/upload-artifact@v4
         with:
