@@ -2,9 +2,9 @@ name: turtlebot3c-gadget
 version: '22-0.4'
 type: gadget
 base: core22
-summary: Gadget for running the TurtleBot3 in VMs.
+summary: Gadget for running the TurtleBot3c in VMs.
 description: |
-  This gadget enables running the TurtleBot3 Ubuntu Core image in LXD containers and VMs.
+  This gadget enables VMs to run the TurtleBot3c Ubuntu Core image.
 confinement: strict
 grade: stable
 icon: icon.png
