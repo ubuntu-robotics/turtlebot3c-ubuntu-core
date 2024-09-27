@@ -5,6 +5,7 @@
 Turtlebot3c Ubuntu Core image
 
 The image contains the TurtleBot3c snaps:
+
 - [turtlebot3c-bringup](https://snapcraft.io/turtlebot3c-bringup)
 - [turtlebot3c-nav](https://snapcraft.io/turtlebot3c-nav)
 - [turtlebot3c-teleop](https://snapcraft.io/turtlebot3c-teleop)
@@ -18,7 +19,7 @@ Mind that you need avahi installed on your remote machine, see e.g. `snap instal
 
 Remember to set up the `ROS_MASTER_URI` to point to the robot:
 
-```
+```bash
 ROS_MASTER_URI=http://turtelbot3c.local:11311/
 ```
 
@@ -36,8 +37,8 @@ and decompressing it, the image can be written to an SD card.
 
 Build the gadget snap with snapcraft:
 
-```
-cd pi-gadget
+```bash
+cd turtlebot3c-gadget
 snapcraft
 cd ../
 ```
@@ -46,7 +47,7 @@ cd ../
 
 [Sign the model](https://ubuntu.com/core/docs/sign-model-assertion) with your key:
 
-```
+```bash
 snap sign -k tb3c-key turtlebot3c-model.json > turtlebot3c.model
 ```
 
@@ -54,11 +55,10 @@ snap sign -k tb3c-key turtlebot3c-model.json > turtlebot3c.model
 
 [Generate the image](https://ubuntu.com/core/docs/build-write-image):
 
-```
-ubuntu-image snap turtlebot3c.model --snap ./pi-gadget/turtlebot3c-pi_20-1_arm64.snap
+```bash
+ubuntu-image snap turtlebot3c.model --snap ./turtlebot3c-gadget/turtlebot3c-pi_*_arm64.snap
 ```
 
 ### Boot the image
 
 Write the generated image on an SD card with the [rpi-imager](https://snapcraft.io/rpi-imager) and boot.
-
