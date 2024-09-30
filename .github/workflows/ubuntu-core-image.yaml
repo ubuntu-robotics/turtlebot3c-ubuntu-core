@@ -3,11 +3,13 @@ on:
   push:
     branches:
       - noetic
+      - humble-virtual
     tags:
       - '*'
   pull_request:
     branches:
       - noetic
+      - humble-virtual
   workflow_dispatch:
 
 jobs:
