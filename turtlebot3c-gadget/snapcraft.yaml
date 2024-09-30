@@ -1,4 +1,4 @@
-name: turtlebot3c-pi
+name: turtlebot3c-gadget
 version: '20-0.4'
 type: gadget
 base: core20
