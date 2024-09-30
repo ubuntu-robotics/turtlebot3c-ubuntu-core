@@ -2,13 +2,11 @@ name: TurtleBot3c Ubuntu Core image
 on:
   push:
     branches:
-      - noetic
       - humble-virtual
     tags:
       - '*'
   pull_request:
     branches:
-      - noetic
       - humble-virtual
   workflow_dispatch:
 
@@ -78,23 +76,17 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: .
+      - name: Download TurtleBot3c qcow2 image
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-ubuntu-qcow2-image
+          path: .
       # The image must be compressed.
       # GH release max file size is 2GB
       # and the uncompressed image is 3.5GB.
       - name: Compress the Ubuntu image
         run: |
           tar czf turtlebot3c.img.tar.gz turtlebot3c.img
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: |
-            turtlebot3c.img.tar.gz
-      # Release the qcow2 image as well
-      - name: Download TurtleBot3c qcow2 image
-        uses: actions/download-artifact@v4
-        with:
-          name: turtlebot3c-ubuntu-qcow2-image
-          path: .
       - name: Compress the Ubuntu qcow2 image
         run: |
           tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2
@@ -102,4 +94,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
+            turtlebot3c.img.tar.gz
             turtlebot3c.qcow2.tar.gz
