@@ -2,12 +2,12 @@ name: TurtleBot3c Ubuntu Core image
 on:
   push:
     branches:
-      - noetic
+      - humble-virtual
     tags:
       - '*'
   pull_request:
     branches:
-      - noetic
+      - humble-virtual
   workflow_dispatch:
 
 jobs:
@@ -46,6 +46,24 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: turtlebot3c.img
+  qcow2-convertion:
+    runs-on: ubuntu-latest
+    needs: ubuntu-image
+    steps:
+      - name: Download TurtleBot3c image
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-ubuntu-image
+          path: .
+      - name: Install qemu-utils
+        run: sudo apt-get install -y qemu-utils
+      - name: Convert image to qcow2
+        run: qemu-img convert -f raw turtlebot3c.img -O qcow2 turtlebot3c.qcow2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: turtlebot3c-ubuntu-qcow2-image
+          path: turtlebot3c.qcow2
   release-image:
     runs-on: ubuntu-latest
     needs: ubuntu-image
@@ -58,15 +76,23 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: .
+      - name: Download TurtleBot3c qcow2 image
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-ubuntu-qcow2-image
+          path: .
       # The image must be compressed.
       # GH release max file size is 2GB
       # and the uncompressed image is 3.5GB.
       - name: Compress the Ubuntu image
         run: |
           tar czf turtlebot3c.img.tar.gz turtlebot3c.img
+      - name: Compress the Ubuntu qcow2 image
+        run: |
+          tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             turtlebot3c.img.tar.gz
-
+            turtlebot3c.qcow2.tar.gz

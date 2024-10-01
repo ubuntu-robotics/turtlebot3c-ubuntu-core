@@ -1,0 +1,15 @@
+language: minimal
+os: linux
+dist: bionic
+sudo: enabled
+addons:
+  snaps:
+    - name: snapcraft
+      channel: edge
+      classic: true
+    - name: core20
+      channel: edge
+
+script:
+  - sudo apt update
+  - sudo snapcraft snap --provider=host --destructive-mode
