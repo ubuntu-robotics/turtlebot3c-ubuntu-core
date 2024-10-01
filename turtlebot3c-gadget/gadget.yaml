@@ -60,3 +60,9 @@ defaults:
         disable: true
     system:
       hostname: turtlebot3c
+
+  # turtlebot3c-bringup configs
+  9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
+    lds-model: "LDS-02"
+    simulation: true
+    turtlebot3-model: "waffle"
