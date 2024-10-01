@@ -4,7 +4,7 @@ on:
     branches:
       - noetic-virtual
     tags:
-      - '*'
+      - '*-noetic-virtual'
   pull_request:
     branches:
       - noetic-virtual
