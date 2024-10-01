@@ -2,18 +2,18 @@ type: model
 authority-id: canonical-robotics
 series: 16
 brand-id: canonical-robotics
-model: turtlebot3c-pi-arm64
-architecture: arm64
+model: turtlebot3c-vm-amd64
+architecture: amd64
 base: core20
 grade: dangerous
 snaps:
   -
-    name: turtlebot3c-pi
+    name: turtlebot3c-gadget
     type: gadget
   -
     default-channel: 20/stable
-    id: jeIuP6tfFrvAdic8DMWqHmoaoukAPNbJ
-    name: pi-kernel
+    id: pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza
+    name: pc-kernel
     type: kernel
   -
     default-channel: latest/stable
@@ -46,30 +46,20 @@ snaps:
     name: turtlebot3c-teleop
     type: app
   -
-    default-channel: 20/stable
-    id: RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy
-    name: network-manager
-    type: app
-  -
-    default-channel: latest/beta
-    id: 9s6xjXubw4a2yA0TE1aIyK90kewEzhYf
-    name: wifi-hotspot-config
-    type: app
-  -
-    default-channel: 20/stable
-    id: dVK2PZeOLKA7vf1WPCap9F8luxTk9Oll
-    name: avahi
+    default-channel: noetic/stable
+    id: hI0GxzwPbIYkzB0weyNgtdw9aTDvdlTL
+    name: ros-snapd
     type: app
 timestamp: 2024-06-06T14:10:24+00:00
 sign-key-sha3-384: MxtroVgzoavCNmtTEGO9_NBZgg-ChD9P4GgbWeA0rzVsaF0rpg21H7luwFDAGOCD
 
-AcLBcwQAAQoAHRYhBBAEChRDJql6dhuVG1bxLKamRGJ9BQJmu3seAAoJEFbxLKamRGJ95vAP/ipS
-IZ/cvVS6Xx3tw2GQIaLsH7FCEjTgRBjFzuyVuqyGtiLwVKZ0ehgNmvuGeRxtTOnct6Zswfk0iVFx
-476H3Mxi/pDcC+ekH0AZPUbAM78rGBhizV46V8QoW/FfgMCtiCttCgqtv9vP+PHP0AlWmvvWG1ca
-QEqEuUJQfav18m4UymWu1sstBA1hPC4oAD6a3sFMMFXDIsSGE4IoiKG1QyygkawJ9djY0ZOmxySt
-HLXtoxHG76yyVV8T3iuz9PPQLFsi7k2CKNIs3bK2mjnQp4ywtVbms+UdPfYyj+SrXnVD39gym5eC
-O8aVQgb28jWBR0nOWNESvjJ/d7m5OTbYHI1Om7pbs3u/Jk1YO95ydkJ7m2BHC00mQ3g9xn62ZNdX
-H3aIebqsy/L8tOw7/zHG/LVCPpg3V1HjAbkcJ9bEbe5dfDBxRL14i3dTnXLB6jDXFvWarh10TzZn
-NrltBW0eQn29x6rNzj7o+52j3UOLpwc3NfR6ZOdwSf78knqRcbZjtN9wTaTO9Es29jZd6w0xwslF
-0cG1oEb6WKnGsyTUy1gqr7UNIU0yK+RyErMX6NTmwy5wzxSUQuZiLR0i/UP4wwWYxTM1VXO5a9T8
-QmmsquIIVP3aVQ7oPU3k7K8xkxG90/i1p5L6vBEPe6G8/VNBlsXSOaIf1TULFN+pbMaoj9ls
+AcLBcwQAAQoAHRYhBBAEChRDJql6dhuVG1bxLKamRGJ9BQJm+69JAAoJEFbxLKamRGJ9R+kP/2tt
+NAg1Bru184qpzaCGUIk8VoDahLSu5xVLQogTORFtfr4iC4R4agO98pJETdD3un0mfxsCxKdDsiIC
++nkvao+baji9s41ZfBygzZCT7mQiTrOH0ZkCqLbkteIKSX8EzKkPBdyvJ7m3hVx2b5c+R4qZshpj
+TLe7ash5hG7TR5Z2yJDisPSI34AbRU2SSXurXjipVi3f3SlhkTzOHU2Om5WpQ8diS5VePYqTzkyz
+KwDHTyLJqNGxZN4F1yvQIVUBFTtEUHaLYzLeaNagpQyuxwIqR9hBKWhZfY0dQtnamP9H/JVHukuu
+7hbcUJtiBMJbwzvcpOI3p2By0dPQu+oJGKSce8fQeJhEAdqFxZ9nKx1qFQVMhUewoSnJ6uPDmUkU
+3VR1Ye4/cuGt0nyBDTskkotIRdHqh8z0jPYjMnrs5N+bK4S58mwSFJnjOfo3qNdXvz0Nj1KqeHLK
+5U468U+hgB93jCOT8stfrfFPlrfAgNLhjYS7/WyPsTpkUZnYyqTHi0MHbNfXB5wp5LX1OWbmkXBQ
+BZerIUwaKun4sGHbF9TJcvL6lAgMBqHpNlUQtZFo+Bu9zSbsE6iblVzRvZfD7fn3sQCnZyuv/gUJ
+1HBGGJAPPBxlkMsy1ICA7347asSugKgDe3d1Zft8pD4u+fsmvIFw443UEH3WPoj6kg1mQMqj
