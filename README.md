@@ -21,8 +21,8 @@ ROS_MASTER_URI=http://turtelbot3c.local:11311/
 The image can be downloaded from the
 [releases page](https://github.com/ubuntu-robotics/turtlebot3c-ubuntu-core/releases).
 
-After downloading the file `turtlebot3c.img.tar.gz`
-and decompressing it, the image can be written to an SD card.
+After downloading the file `turtlebot3c.qcow2.tar.gz` and decompressing it,
+the image can be imported into LXD.
 
 ## Build the image
 
@@ -31,7 +31,7 @@ and decompressing it, the image can be written to an SD card.
 Build the gadget snap with snapcraft:
 
 ```bash
-cd pi-gadget
+cd turtlebot3c-gadget
 snapcraft
 cd ../
 ```
@@ -49,7 +49,7 @@ snap sign -k tb3c-key turtlebot3c-model.json > turtlebot3c.model
 [Generate the image](https://ubuntu.com/core/docs/build-write-image):
 
 ```bash
-ubuntu-image snap turtlebot3c.model --snap ./pi-gadget/turtlebot3c-pi_20-1_arm64.snap
+ubuntu-image snap turtlebot3c.model --snap ./turtlebot3c-gadget/turtlebot3c-*.snap
 ```
 
 ### Boot the image
