@@ -46,6 +46,11 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-image
           path: turtlebot3c.img
+      - name: Upload metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: turtlebot3c-metadata
+          path: metadata.tar.gz
   qcow2-convertion:
     runs-on: ubuntu-latest
     needs: ubuntu-image
@@ -81,15 +86,18 @@ jobs:
         with:
           name: turtlebot3c-ubuntu-qcow2-image
           path: .
+      - name: Download TurtleBot3c metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: turtlebot3c-metadata
+          path: .
       # The image must be compressed.
       # GH release max file size is 2GB
       # and the uncompressed image is 3.5GB.
       - name: Compress the Ubuntu image
-        run: |
-          tar czf turtlebot3c.img.tar.gz turtlebot3c.img
+        run: tar czf turtlebot3c.img.tar.gz turtlebot3c.img
       - name: Compress the Ubuntu qcow2 image
-        run: |
-          tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2
+        run: tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2 metadata.tar.gz
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
