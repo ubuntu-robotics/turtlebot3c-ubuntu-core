@@ -66,6 +66,12 @@
             "type": "app",
             "default-channel": "humble/stable",
             "id": "QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK"
+        },
+        {
+            "name": "robot-model-server",
+            "type": "app",
+            "default-channel": "latest/edge",
+            "id": "ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn"
         }
     ]
 }

@@ -66,3 +66,8 @@ defaults:
     lds-model: "LDS-02"
     simulation: true
     turtlebot3-model: "waffle"
+
+connections:
+  # robot-model-server <-> turtlebot3c-model
+  - plug: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn:model
+    slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
