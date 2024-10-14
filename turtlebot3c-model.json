@@ -44,6 +44,12 @@
             "id": "9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa"
         },
         {
+            "name": "turtlebot3c-model",
+            "type": "app",
+            "default-channel": "latest/edge",
+            "id": "Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw"
+        },
+        {
             "name": "ros2-nav2",
             "type": "app",
             "default-channel": "humble/edge",
@@ -60,6 +66,12 @@
             "type": "app",
             "default-channel": "humble/stable",
             "id": "QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK"
+        },
+        {
+            "name": "robot-model-server",
+            "type": "app",
+            "default-channel": "latest/edge",
+            "id": "ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn"
         }
     ]
 }
