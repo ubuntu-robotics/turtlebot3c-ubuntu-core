@@ -36,6 +36,11 @@ snaps:
     name: turtlebot3c-bringup
     type: app
   -
+    default-channel: latest/edge
+    id: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw
+    name: turtlebot3c-model
+    type: app
+  -
     default-channel: humble/edge
     id: 7KmGS1V786zcoQjSqrYsW1fwEuuESP35
     name: ros2-nav2
@@ -50,16 +55,21 @@ snaps:
     id: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK
     name: ros2-snapd
     type: app
+  -
+    default-channel: latest/edge
+    id: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn
+    name: robot-model-server
+    type: app
 timestamp: 2024-09-13T14:10:24+00:00
 sign-key-sha3-384: MxtroVgzoavCNmtTEGO9_NBZgg-ChD9P4GgbWeA0rzVsaF0rpg21H7luwFDAGOCD
 
-AcLBcwQAAQoAHRYhBBAEChRDJql6dhuVG1bxLKamRGJ9BQJm+r75AAoJEFbxLKamRGJ9fHYP/RP0
-iqncp/CAAKOq0sgCAlm5t0XE3HOg0iXQEUa/8lXpUVgq1x+SyfhjWNm6qw6ph1eHUl9exPtC2fbm
-ADpES8kCiuMiLGH0DWHOJTq2SGUHhYkK9w2FQ7W9pY138w7poq3n2JveUd6NdJGyWb/dXGyK1k82
-GNuhf+ePIB+ocvmbFL75P8yhwI99VtsID1lI68MUPNeHXsCbWDkAoxkhdjurl+6iLPgvCev41c/e
-ZnszVJbnibBYorNWvUsd+CG5u80+T8e3ebnsENlH5/KCdmN5KSWUMykkmf1SNj1Z94FxPHDCTkQ8
-D0rv6NmU0J2rWs0q+KJap7E2HWBdRIulLZblDOkvH2qmpY02Xk8wJJHdojitaPLv0LpdG3xXN4mz
-ISf9nPFiLdGe5w1bdAyKlFDxTmwUKvpAAblIUybC3/j6gVUS827JZROc4W1Zs3FnQYenG3SKDdBl
-x+9Dc6jj68SI8atcnkX1dWYk4Np1oDyAonl6XQ4Pov04MqXYjVRDWpsj6XpIBa9mrO5sbvBl8rua
-ShQszLZ7WeuWNlN+eQh7wL8OaXRGBQ9cw62wBmwMOhQpMZ7LydgOccleH2/GLurwmeTJIQYgmzGH
-NW9yekU2HT3jyVuwq16+gxSmRvgkCrAYzGoBDBgGHO37MwX9Uos5hT1SkubhwoqCCmBP/pNK
+AcLBcwQAAQoAHRYhBBAEChRDJql6dhuVG1bxLKamRGJ9BQJnDiXUAAoJEFbxLKamRGJ91LMP/06P
+a9WTrvqeWhbUnWqlJnLZQRdHhjeIC/AzrTYITsJBdc/NQ2PNtONOHjKWU7GP//jmEwdTMXuFRJVs
+O3l4kMwFQ0mey+XJrhMYwEcimXuTm9+nX8xlqwDb9JvQ2xAHPWZ4fBdBfzDspBEH6qOK+t1Pt/Uc
+gzhZw5fLCxDY2Zq8Fh27fjZLRUs7NDUl41kZe2K3NpeCguCOkDzIEiLxk5JxBXd8jGcmhmGN0795
+iowVH3ptH+vPcs42NcIlWtqncwelakpngf7pn8/EdIxhsgXujO4KfB3U7WajkE2yiDTDc7hgSxhJ
+RGwBVi9eX+6ak7TVd4d5K7tt1vqfcxKT7pUNGoywB/xZLN7kx2nuLcJghyfIpurLWjuDM9KVqHrE
+JbapIR2llBrgL3JgdjaTWHXfC0Udb2XTk+Vpf25EcrANgyF3/qe+WMVLLGPQ3zYRHUOX8s9uXJkB
+Yr3Feorx+1fjZjj0eKQi/zzxRM+fTQVgovwKgDDkqDIlIMqqKCMTmsYcCvnfj0lDPgr8W5ZnHWEl
+lEgmIaKTbir58L0hYZGFH4LHg3viGOiBeX3mFkm//h2xHpVWzlQp6bOdbG0YIv1ZRC330fgx7pgS
+rjmqQ85nt38IKTTzTHXSj+YtFrOK5603BdB8rlAqIvuToamE/ck8/9k4z0J9R05GN9spoPlA
