@@ -4,7 +4,7 @@ on:
     branches:
       - humble-virtual
     tags:
-      - '*-humble-virtual'
+      - '*-humble-virtual*'
   pull_request:
     branches:
       - humble-virtual
