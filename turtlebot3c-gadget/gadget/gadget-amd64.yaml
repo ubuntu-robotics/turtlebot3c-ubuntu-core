@@ -60,3 +60,22 @@ defaults:
         disable: true
     system:
       hostname: turtlebot3c
+
+  # turtlebot3c-bringup configs
+  9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
+    lds-model: "LDS-02"
+    simulation: true
+    turtlebot3-model: "waffle"
+
+  # ros2-nav2 configs
+  7KmGS1V786zcoQjSqrYsW1fwEuuESP35:
+    simulation: true
+    navigation-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/localization_params.yaml"
+    localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/nav2_params.yaml"
+    map-yaml-path: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/map.yaml"
+
+connections:
+  # robot-model-server <-> turtlebot3c-model
+  - plug: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn:model
+    slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
+  - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:snapd-control
