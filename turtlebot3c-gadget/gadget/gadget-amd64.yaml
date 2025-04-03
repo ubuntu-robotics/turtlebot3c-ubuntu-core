@@ -69,7 +69,6 @@ defaults:
 
   # ros2-nav2 configs
   7KmGS1V786zcoQjSqrYsW1fwEuuESP35:
-    simulation: True
     navigation-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/nav2_params.yaml"
     localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/localization_params.yaml"
     map-yaml-path: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/update-humble-virtual-with-config/config/map.yaml"
