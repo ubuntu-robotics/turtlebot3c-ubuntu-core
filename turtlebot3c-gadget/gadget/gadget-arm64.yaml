@@ -37,3 +37,31 @@ volumes:
         filesystem: ext4
         type: 0FC63DAF-8483-4772-8E79-3D69D8477DE4
         size: 1G
+
+defaults:
+  system:
+    service:
+      console-conf:
+        disable: true
+    system:
+      hostname: turtlebot3c
+
+  # turtlebot3c-bringup configs
+  9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
+    lds-model: "LDS-01"
+    simulation: true
+    turtlebot3-model: "waffle_pi"
+
+  # ros2-nav2 configs
+  7KmGS1V786zcoQjSqrYsW1fwEuuESP35:
+    simulation: "True"
+    navigation-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/nav2_params.yaml"
+    localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/localization_params.yaml"
+    map-yaml-path: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/map.yaml"
+
+connections:
+  # robot-model-server <-> turtlebot3c-model
+  - plug: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn:model
+    slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
+  # ros2-snapd <-> snapd-control
+  - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:snapd-control
