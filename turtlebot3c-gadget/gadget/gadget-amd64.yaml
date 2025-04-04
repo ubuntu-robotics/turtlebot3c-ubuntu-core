@@ -63,9 +63,9 @@ defaults:
 
   # turtlebot3c-bringup configs
   9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa:
-    lds-model: "LDS-02"
+    lds-model: "LDS-01"
     simulation: true
-    turtlebot3-model: "waffle"
+    turtlebot3-model: "waffle_pi"
 
   # ros2-nav2 configs
   7KmGS1V786zcoQjSqrYsW1fwEuuESP35:
