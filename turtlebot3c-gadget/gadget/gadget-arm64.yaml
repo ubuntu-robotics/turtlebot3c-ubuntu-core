@@ -57,7 +57,7 @@ defaults:
     simulation: "True"
     navigation-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/nav2_params.yaml"
     localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/localization_params.yaml"
-    slam-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/feat/add-slam-params/config/slam_params.yaml"
+    slam-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/slam_params.yaml"
 
 connections:
   # robot-model-server <-> turtlebot3c-model
