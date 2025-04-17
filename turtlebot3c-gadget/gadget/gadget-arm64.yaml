@@ -65,3 +65,11 @@ connections:
     slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
   # ros2-snapd <-> snapd-control
   - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:snapd-control
+  # rob-cos-grafana-agent connections
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:hardware-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:log-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:mount-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:network-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:proc-sys-kernel-random
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:system-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:time-control

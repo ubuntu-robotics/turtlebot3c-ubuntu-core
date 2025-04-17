@@ -74,9 +74,18 @@ defaults:
     localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/localization_params.yaml"
     slam-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/slam_params.yaml"
 
+
 connections:
   # robot-model-server <-> turtlebot3c-model
   - plug: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn:model
     slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
   # ros2-snapd <-> snapd-control
   - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:snapd-control
+  # rob-cos-grafana-agent connections
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:hardware-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:log-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:mount-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:network-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:proc-sys-kernel-random
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:system-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:time-control
