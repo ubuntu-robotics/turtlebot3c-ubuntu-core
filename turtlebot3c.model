@@ -31,7 +31,7 @@ snaps:
     name: ros-humble-desktop
     type: app
   -
-    default-channel: humble/edge
+    default-channel: humble/stable
     id: 9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa
     name: turtlebot3c-bringup
     type: app
@@ -51,7 +51,7 @@ snaps:
     name: ros2-teleop
     type: app
   -
-    default-channel: humble/stable
+    default-channel: humble/edge
     id: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK
     name: ros2-snapd
     type: app
@@ -61,12 +61,12 @@ snaps:
     name: robot-model-server
     type: app
   -
-    default-channel: latest/beta
+    default-channel: 0/stable
     id: aPqfgnpgYVC43gfReJsJLuUUwmJBiKng
     name: cos-registration-agent
     type: app
   -
-    default-channel: latest/beta
+    default-channel: 0/stable
     id: LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH
     name: rob-cos-demo-configuration
     type: app
@@ -76,7 +76,7 @@ snaps:
     name: rob-cos-data-sharing
     type: app
   -
-    default-channel: latest/beta
+    default-channel: 0/stable
     id: b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu
     name: ros2-exporter-agent
     type: app
@@ -93,13 +93,13 @@ snaps:
 timestamp: 2024-09-13T14:10:24+00:00
 sign-key-sha3-384: R9TnkbYQopO5aiqAoPi4GgQ147kUwOMOigVWJxicjSo2ABH7oGSJ10oAyGNAPEvo
 
-AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJoAhXdAAoJEJkvyW1pqFsSMlcP/Az+
-QfsFbO+OJE5iq3qt/CahLitDtH9FDBqZIzOi/ElhvSmxVp/PiS4j/0/cAdBshG1Eyr6EpvntUgRF
-y8Zx26h/qSrW/Yr944ENPSFIuqqldcljFHzmUhJ1yHN8TpSY9K4Tm8FtwbBh1hqoGNaQtppMg/MD
-TxNjKUDUk84uNVTvcwq9af26U8nimmotF06oPVXXsKqX8wT9eCEZ67VTT4yOu5tRbeRLAo9nw5Qk
-hTFqsa2MqiSni4oUeLdZs2foJ/bK/FH2F3CFEojsbsUEjQEXVuf/wRh5+RH6XcHpTUh58bPS4fE2
-fYgiJN99qBXU9HoQ6NFFaoYnUS58gp6FKyyRxvsXl7UhcVaJm3i2Wrsw/oj2WMiXgMz3XLfgPtir
-aNTHFHiu/3MtRjawYPRd2KOeEl3BNanbqvECaKDstrYa1GVhUElmsdvPiOHOQ7cKh+xHeQ6VDBcr
-GEBWLSYqC0gMGuvvHzw676EmxvQK4cO4johZQ+dgXHjsMrYJ1Df5Ccd8fH7dwRS1qaz143qcSPT9
-pkEMULwMUX3UOG5ehCKtNcjrOVOgKu191G+CWDwDzn6LolNqRPh6ceFIde3k0zjXiZEd9sJPeCL+
-ymt0S/6mApfblFXfr/ZTWnvsjVPxFoLhbuFRPTqCPs3cmEEQfQ9WzRSNZcjviuAY6gra3gKv
+AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJpkuZEAAoJEJkvyW1pqFsSAxwP+gPX
+IM6xUxPKXwFvkBcvu6ipBdwG4/tQxQqiqnYd0GLqlE3Y9P4iQMzycJVQKEj4nSjlhKjLhFeM5cK6
+QBbyoMFiAriFppZDbIJDeADwYIDZUhLpv3DMinFm6pJMZmeDnoo02G0zO9ujf1kMpxDepaXsIGqa
+T5g94W60e8V7fqMWNxowHYqs5BO4QTIjrnSqpn4Bx4uIlT9dhUe/dJoS24hAxYsf3M1Scg4tSNFQ
+WPASMvYKdZxnb9DWubaJ1HjlPFcpMl/PSG2qh7ROtXHNj+9tgScdMojiMJDZAr+M749qBdMrqKyK
+H4EFUpXUKjaKSI0P2n1H+djtdqsaRFRfRwuoETv+hTgYKjkVO8Wy7fn8XVS7Ywd2renh/obYsjbL
+tQjqdbAg57OHFUcMLSG0S5mJDKApYD0c+yo1nY9bIdJt9IeL9CeuNasEXMG+9x67WtwIaHUrPiJs
+Uv6QY8+GWplBVT9pdpGgyC4Ud9u1qYQtomFp2Pkc+w8rrHqrjuPthkyfwbG6vjfsYgAcbLol8QzZ
+TopDVKvDMQoFxh/LOZaf458RalVfdL/jaN02BNdvol3LlwAFJUBH2Kqj5QlPHZUGGPli2ISNBZej
+mP4UhgQ+9QcK2ytvpJiAM1MhuldlXddNjU6BTZyL9OA2MdE0qaOWjfZdatph2gVr9cb2y5lk

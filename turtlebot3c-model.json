@@ -40,7 +40,7 @@
         {
             "name": "turtlebot3c-bringup",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa"
         },
         {
@@ -64,7 +64,7 @@
         {
             "name": "ros2-snapd",
             "type": "app",
-            "default-channel": "humble/stable",
+            "default-channel": "humble/edge",
             "id": "QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK"
         },
         {
@@ -76,13 +76,13 @@
         {
             "name": "cos-registration-agent",
             "type": "app",
-            "default-channel": "latest/beta",
+            "default-channel": "0/stable",
             "id": "aPqfgnpgYVC43gfReJsJLuUUwmJBiKng"
         },
         {
             "name": "rob-cos-demo-configuration",
             "type": "app",
-            "default-channel": "latest/beta",
+            "default-channel": "0/stable",
             "id": "LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH"
         },
         {
@@ -94,7 +94,7 @@
         {
             "name": "ros2-exporter-agent",
             "type": "app",
-            "default-channel": "latest/beta",
+            "default-channel": "0/stable",
             "id": "b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu"
         },
         {
