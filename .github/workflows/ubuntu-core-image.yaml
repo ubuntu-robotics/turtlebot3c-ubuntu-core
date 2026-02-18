@@ -2,12 +2,12 @@ name: TurtleBot3c Ubuntu Core image
 on:
   push:
     branches:
-      - humble-virtual
+      - humble-virtual-cos
     tags:
-      - '*-humble-virtual*'
+      - '*-humble-virtual-cos-*
   pull_request:
     branches:
-      - humble-virtual
+      - humble-virtual-cos
   workflow_dispatch:
 
 jobs:
