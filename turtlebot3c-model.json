@@ -52,19 +52,19 @@
         {
             "name": "ros2-nav2",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "7KmGS1V786zcoQjSqrYsW1fwEuuESP35"
         },
         {
             "name": "ros2-teleop",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "0OyYaVBlD3ww7zO2gpaEy6AqGuVGYcN0"
         },
         {
             "name": "ros2-snapd",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK"
         },
         {
@@ -76,7 +76,7 @@
         {
             "name": "cos-registration-agent",
             "type": "app",
-            "default-channel": "0/stable",
+            "default-channel": "latest/edge",
             "id": "aPqfgnpgYVC43gfReJsJLuUUwmJBiKng"
         },
         {
