@@ -4,7 +4,7 @@ on:
     branches:
       - humble-virtual-cos
     tags:
-      - '*-humble-virtual-cos-*
+      - '*-humble-virtual-cos-*'
   pull_request:
     branches:
       - humble-virtual-cos
