@@ -95,12 +95,18 @@ jobs:
       # GH release max file size is 2GB
       # and the uncompressed image is 3.5GB.
       - name: Compress the Ubuntu image
-        run: tar czf turtlebot3c.img.tar.gz turtlebot3c.img
+        run: |
+          tar czf turtlebot3c.img.tar.gz turtlebot3c.img
+          split -b 1900M --numeric-suffixes=1 --suffix-length=3 \
+            turtlebot3c.img.tar.gz turtlebot3c.img.tar.gz.part-
       - name: Compress the Ubuntu qcow2 image
-        run: tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2 metadata.tar.gz
+        run: |
+          tar czf turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2 metadata.tar.gz
+          split -b 1900M --numeric-suffixes=1 --suffix-length=3 \
+            turtlebot3c.qcow2.tar.gz turtlebot3c.qcow2.tar.gz.part-
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            turtlebot3c.img.tar.gz
-            turtlebot3c.qcow2.tar.gz
+            turtlebot3c.img.tar.gz.part-*
+            turtlebot3c.qcow2.tar.gz.part-*
