@@ -61,7 +61,9 @@ jobs:
           name: turtlebot3c-ubuntu-image
           path: .
       - name: Install qemu-utils
-        run: sudo apt-get install -y qemu-utils
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y qemu-utils
       - name: Convert image to qcow2
         run: qemu-img convert -f raw turtlebot3c.img -O qcow2 turtlebot3c.qcow2
       - name: Upload artifact
