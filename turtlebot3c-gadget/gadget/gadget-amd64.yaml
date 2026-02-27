@@ -76,7 +76,7 @@ defaults:
 
   # rob-cos-demo-configuration
   LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH:
-    # value from canonica/concierge microk8s preset
+    # value from canonical/concierge microk8s preset
     # the IP is comming from metallb configuration
     # https://github.com/canonical/concierge/blob/bebf251cdfbfb6a1ea0b8e6c33bf58c45eec1a44/internal/config/presets.go#L60
     rob-cos-base-url: "http://10.64.140.43/cos-rob"
