@@ -26,6 +26,19 @@ The image contains the snaps required to observe the robot via COS for robotics:
 The image can be downloaded from the
 [releases page](https://github.com/ubuntu-robotics/turtlebot3c-ubuntu-core/releases).
 
+### Reassemble split downloads
+
+Release assets are split into 1900M parts. Download all parts for the image you
+need, then reassemble and extract:
+
+```bash
+cat turtlebot3c.img.tar.gz.part-* > turtlebot3c.img.tar.gz
+tar xzf turtlebot3c.img.tar.gz
+
+cat turtlebot3c.qcow2.tar.gz.part-* > turtlebot3c.qcow2.tar.gz
+tar xzf turtlebot3c.qcow2.tar.gz
+```
+
 ## Build the image
 
 ### Build the gadget snap
