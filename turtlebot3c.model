@@ -66,7 +66,7 @@ snaps:
     name: cos-registration-agent
     type: app
   -
-    default-channel: 0/stable
+    default-channel: basic/beta
     id: LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH
     name: rob-cos-demo-configuration
     type: app
@@ -76,7 +76,7 @@ snaps:
     name: rob-cos-data-sharing
     type: app
   -
-    default-channel: 0/stable
+    default-channel: latest/edge
     id: b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu
     name: ros2-exporter-agent
     type: app
@@ -93,13 +93,13 @@ snaps:
 timestamp: 2024-09-13T14:10:24+00:00
 sign-key-sha3-384: R9TnkbYQopO5aiqAoPi4GgQ147kUwOMOigVWJxicjSo2ABH7oGSJ10oAyGNAPEvo
 
-AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJpleEvAAoJEJkvyW1pqFsSHPoP/AzI
-fqeqGQ2MAePWYk7pqLPjTamoTxnJOFMpis2D6wcp8edGrTdjLZ50KbQOlkxzilije2zf11Y2BCEQ
-OJSzAF6N+k1j/iA99nVFYl59eXdSjPl/sDTX0xca/WsQPFJqgbFzIQEHqHkPabGjIRGtljnPQa8c
-2kBp2hbaTJyiemKLWMqHQFXBKOkyJ89tFvbpNAFmABvff8R116UGpxLWKe4jKYXKWkwmchBdUcHW
-9zh/eKXP2DRFjHICiTKzMCWOJj+6TT76LIg5EHYR2MR7ONRvloD1Gm2Enrz/laJ6Q1l4vTA08uZF
-zTCS+AvIJlPOBGs4WlhyH3sP+B1EnMVZlkuxBsOcvqJ1AtK7JV9EkIiNh4ZLdrXBFZdxUN7SkXd0
-HuZJcEv6nQQMKUxApOCGll5JowTJl3sHHr+C86auwvuc4GLI4qN9Cm/23Bg+pW+WQlAwwV346P/e
-ah0edSmCfgElLRv92vBMuOA+W13PNeTtIgMRmLNC2S9JIBwzHOYOSvMmZWA47dKHxDEthzhzFp2w
-JNVjhboL7vvUsWaN1xWq91FjkCi3JC6ZBU3kjdbd5Qr+ByIjabeCdNKc15+pyVkhnjgnwQXrFdwJ
-NmX8wxIDpXqRo1z4NVduxx6u/pQXXvJKuJK2wshVDqvU5I6DmjcVXayoZSfHYZRGQ1WBYrNx
+AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJpvA1iAAoJEJkvyW1pqFsS5WgQAMMv
+aDb8+VtuLtciNFHy40RdXTu+bo5Id/hDtTiFOieiKvgV7HrD0dG3TsAtfsHQZ1DoThrZWh9kaYHH
+hhmyJTCW3EZVR1rg2rHz1AEYsv2PZH8ItVQH/k2ZT4ZczMVRga8ByW1b3YTkX8n1vyc8NdkRlVch
+6ImwnxNqRJYU6pvfyY6zL/JhrRYob6VcFxlCOGNLxUrkNQghEbS+33wx74l25CscGH99CfT0LGQt
+BAW3s1jgyX2cXOy4eKZNBVZItihxTCUsvcrTvLs3LdXCa9DnrLKM36YBBL1W9FiFGI/1n35N87kQ
+sl6k6lv0iy0+lOvURgKsrP1gcXZTJ09fAVwlS7RPA3h1nChLqF+ZDZK8VO0XIYGNCyl1LpIiVqWV
+mcohPyKmKfROdm4RGPmB62nv7GYx+7tlMCD7Mf1or6SyYkTPrUoKt7vPwYqQ46X7EoTqMok61LA8
+SKZ3chYCY0UovKfiRIw4/nFl16xgudTiI84WDNzaCJ1m8RjhDWJOgEzeFbTDQVgasDmnmCTXld1K
+vXPMb8CluLRhPL6AFHKZ7tt6fSdsRIf7+NvPIkeC4JNRLoIlDPjbCeee9rnlYYheostjvYsZQHPq
+9d9FDTR2GTDUUQiQSue9UrT41ANfgIph5ugc0sDOYYbnjS9YlkIzfa389LUrlzTlJmviq/ZX

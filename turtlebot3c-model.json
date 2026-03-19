@@ -82,7 +82,7 @@
         {
             "name": "rob-cos-demo-configuration",
             "type": "app",
-            "default-channel": "0/stable",
+            "default-channel": "basic/beta",
             "id": "LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH"
         },
         {
@@ -94,7 +94,7 @@
         {
             "name": "ros2-exporter-agent",
             "type": "app",
-            "default-channel": "0/stable",
+            "default-channel": "latest/edge",
             "id": "b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu"
         },
         {
