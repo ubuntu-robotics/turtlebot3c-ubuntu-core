@@ -100,7 +100,7 @@
         {
             "name": "foxglove-bridge",
             "type": "app",
-            "default-channel": "humble/stable",
+            "default-channel": "cos-humble/stable",
             "id": "mEdmVA83zXRniIbxhPsZQ8nXfn8nbe7y"
         },
         {
