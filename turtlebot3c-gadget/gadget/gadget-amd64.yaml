@@ -74,9 +74,24 @@ defaults:
     localization-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/localization_params.yaml"
     slam-config: "https://raw.githubusercontent.com/ubuntu-robotics/turtlebot3c-ubuntu-core/refs/heads/humble-virtual/config/slam_params.yaml"
 
+  # rob-cos-demo-configuration
+  LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH:
+    # value from canonical/concierge microk8s preset
+    # the IP is coming from metallb configuration
+    # https://github.com/canonical/concierge/blob/bebf251cdfbfb6a1ea0b8e6c33bf58c45eec1a44/internal/config/presets.go#L60
+    rob-cos-base-url: "http://10.64.140.43/cos-rob"
+
 connections:
   # robot-model-server <-> turtlebot3c-model
   - plug: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn:model
     slot: Ifq52mXFEZzR7xuQz2j3a4GhBNE0dZjw:model
   # ros2-snapd <-> snapd-control
-  - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:snapd-control
+  - plug: QMqEk9DW43r79WhvgrYN2oaGIPCjyYXK:ros-snapd-support
+  # rob-cos-grafana-agent connections
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:hardware-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:log-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:mount-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:network-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:proc-sys-kernel-random
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:system-observe
+  - plug: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD:time-control

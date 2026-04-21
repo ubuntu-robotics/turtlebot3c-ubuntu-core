@@ -40,7 +40,7 @@
         {
             "name": "turtlebot3c-bringup",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa"
         },
         {
@@ -52,13 +52,13 @@
         {
             "name": "ros2-nav2",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "7KmGS1V786zcoQjSqrYsW1fwEuuESP35"
         },
         {
             "name": "ros2-teleop",
             "type": "app",
-            "default-channel": "humble/edge",
+            "default-channel": "humble/stable",
             "id": "0OyYaVBlD3ww7zO2gpaEy6AqGuVGYcN0"
         },
         {
@@ -72,6 +72,42 @@
             "type": "app",
             "default-channel": "latest/edge",
             "id": "ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn"
+        },
+        {
+            "name": "cos-registration-agent",
+            "type": "app",
+            "default-channel": "latest/edge",
+            "id": "aPqfgnpgYVC43gfReJsJLuUUwmJBiKng"
+        },
+        {
+            "name": "rob-cos-demo-configuration",
+            "type": "app",
+            "default-channel": "basic/beta",
+            "id": "LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH"
+        },
+        {
+            "name": "rob-cos-data-sharing",
+            "type": "app",
+            "default-channel": "latest/beta",
+            "id": "QniXwuZlJhk1wcKnaG03Kh327hKOBJDu"
+        },
+        {
+            "name": "ros2-exporter-agent",
+            "type": "app",
+            "default-channel": "latest/edge",
+            "id": "b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu"
+        },
+        {
+            "name": "foxglove-bridge",
+            "type": "app",
+            "default-channel": "cos-humble/stable",
+            "id": "mEdmVA83zXRniIbxhPsZQ8nXfn8nbe7y"
+        },
+        {
+            "name": "rob-cos-grafana-agent",
+            "type": "app",
+            "default-channel": "core22/edge",
+            "id": "RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD"
         }
     ]
 }

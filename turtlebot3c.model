@@ -31,7 +31,7 @@ snaps:
     name: ros-humble-desktop
     type: app
   -
-    default-channel: humble/edge
+    default-channel: humble/stable
     id: 9QxPQq7N15yTrRVuy8s4NFCWmkZRjtOa
     name: turtlebot3c-bringup
     type: app
@@ -41,12 +41,12 @@ snaps:
     name: turtlebot3c-model
     type: app
   -
-    default-channel: humble/edge
+    default-channel: humble/stable
     id: 7KmGS1V786zcoQjSqrYsW1fwEuuESP35
     name: ros2-nav2
     type: app
   -
-    default-channel: humble/edge
+    default-channel: humble/stable
     id: 0OyYaVBlD3ww7zO2gpaEy6AqGuVGYcN0
     name: ros2-teleop
     type: app
@@ -60,16 +60,46 @@ snaps:
     id: ThDyKcX6gow4XUPSkW0ujj5BBCah65Vn
     name: robot-model-server
     type: app
+  -
+    default-channel: latest/edge
+    id: aPqfgnpgYVC43gfReJsJLuUUwmJBiKng
+    name: cos-registration-agent
+    type: app
+  -
+    default-channel: basic/beta
+    id: LuZwHeStuLqUrqpKvdfQRhgvG4PaWgDH
+    name: rob-cos-demo-configuration
+    type: app
+  -
+    default-channel: latest/beta
+    id: QniXwuZlJhk1wcKnaG03Kh327hKOBJDu
+    name: rob-cos-data-sharing
+    type: app
+  -
+    default-channel: latest/edge
+    id: b2YyOK2pGl1e7PasgnOLuRsN7qHrtTQu
+    name: ros2-exporter-agent
+    type: app
+  -
+    default-channel: cos-humble/stable
+    id: mEdmVA83zXRniIbxhPsZQ8nXfn8nbe7y
+    name: foxglove-bridge
+    type: app
+  -
+    default-channel: core22/edge
+    id: RzTvUHgrBxQrDiZnCFbLUETXqVpTKqtD
+    name: rob-cos-grafana-agent
+    type: app
 timestamp: 2024-09-13T14:10:24+00:00
-sign-key-sha3-384: MxtroVgzoavCNmtTEGO9_NBZgg-ChD9P4GgbWeA0rzVsaF0rpg21H7luwFDAGOCD
+sign-key-sha3-384: R9TnkbYQopO5aiqAoPi4GgQ147kUwOMOigVWJxicjSo2ABH7oGSJ10oAyGNAPEvo
 
-AcLBcwQAAQoAHRYhBBAEChRDJql6dhuVG1bxLKamRGJ9BQJnDiXUAAoJEFbxLKamRGJ91LMP/06P
-a9WTrvqeWhbUnWqlJnLZQRdHhjeIC/AzrTYITsJBdc/NQ2PNtONOHjKWU7GP//jmEwdTMXuFRJVs
-O3l4kMwFQ0mey+XJrhMYwEcimXuTm9+nX8xlqwDb9JvQ2xAHPWZ4fBdBfzDspBEH6qOK+t1Pt/Uc
-gzhZw5fLCxDY2Zq8Fh27fjZLRUs7NDUl41kZe2K3NpeCguCOkDzIEiLxk5JxBXd8jGcmhmGN0795
-iowVH3ptH+vPcs42NcIlWtqncwelakpngf7pn8/EdIxhsgXujO4KfB3U7WajkE2yiDTDc7hgSxhJ
-RGwBVi9eX+6ak7TVd4d5K7tt1vqfcxKT7pUNGoywB/xZLN7kx2nuLcJghyfIpurLWjuDM9KVqHrE
-JbapIR2llBrgL3JgdjaTWHXfC0Udb2XTk+Vpf25EcrANgyF3/qe+WMVLLGPQ3zYRHUOX8s9uXJkB
-Yr3Feorx+1fjZjj0eKQi/zzxRM+fTQVgovwKgDDkqDIlIMqqKCMTmsYcCvnfj0lDPgr8W5ZnHWEl
-lEgmIaKTbir58L0hYZGFH4LHg3viGOiBeX3mFkm//h2xHpVWzlQp6bOdbG0YIv1ZRC330fgx7pgS
-rjmqQ85nt38IKTTzTHXSj+YtFrOK5603BdB8rlAqIvuToamE/ck8/9k4z0J9R05GN9spoPlA
+AcLBcwQAAQoAHRYhBHFETj3bS1TGCpzDyZkvyW1pqFsSBQJpvDLlAAoJEJkvyW1pqFsSYAsP/33m
+/u77DqzrKDgxAwOtjTIueO8AJWMOzvVz8mDI2e8k4Fc299EzCnCkoLqHkGAY6pgYDG/nZdIbd4/I
+whmpIQGtjNQarl1nE4mRoOqGhiO2IvVhNCCJ/iK6K3pXe3XAS8wj064JfXiXvDWs2FnRkqtPDRkn
+S70OWwFaScEtzwknLl0i6sN/JcScP87h3kuWF+aW5VKTCGHFe02OEy4P9iALZzPT+kBo06z7K4O/
+H4eDimmwdoWAgYwqwBZATTCKacz7zLbc2Lduz7tBoc5QzjODcvjt5luX5AKKpsloVSwGQTKKOZiA
+XjoS5zm5Td85fkWGcY99C4UFA5uLsAkyv2UcTNLgdkxYwz7pdTUqszf+3ULENoIIL+mAHIvG0lUn
+iWKXv1VM4kJzM/ZiRauLVNBXlfVNDXfF7hmI02v33v5GBqiLRl+G7tF2b56Wrpo7zjdzrkmYll7J
+WWhxYLjl/vd7DDbrUmNKlgrZ6qyMikM3X5t8a4isuVvSfqpTJV4sJPsMDwyrKosa0Sq6hCtT37ab
+O9ANGLnxFjsoeLZWOCi2Bl/WSPRgXNGVZkhp5nCbyaCK910CEleoiphTgx8HvrNKoG0ZCWjrFkeU
+IlQLUFvqFd3tmw73Rd91TAr8G8xBBu2jM3w+EMFXAFunDxnIVo4KPgkUT9ckJqBvWIbybLza
